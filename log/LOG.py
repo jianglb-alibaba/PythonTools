@@ -12,7 +12,7 @@ Sun, 24 May 2009 21:48:54 demo2.py[line:11] DEBUG This is debug message
 
 how to use :
 """
-
+from  testing.timeing import log_time_delta
 import logging
 import sys
 
@@ -98,7 +98,7 @@ class LOG():
                         Please Use the follow command:
                         log2file("help")  or  log2file("HELP") """)
             return
-
+    @log_time_delta
     def log2file(self,content,**kwargs):
         """
         **kwargs:
@@ -182,5 +182,6 @@ if __name__ == '__main__':
         # log.log2file("打算的撒",level=2)
         # log.log2file("打算的撒",level=2,filename="hello.log")
         # log.log2file_help()
-        log.log2file("打算的撒",level=5,format="A",datefmt="custom",filemode="a")
+
+        log.log2file("打算的撒大大大叔的 ",level=2,format="B",datefmt="custom",filemode="a")
         # content1 = "hello 大家好 "

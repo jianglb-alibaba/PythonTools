@@ -2,6 +2,10 @@
 @author: allen
 '''
 import pytest
+import sys
+
+sys.path.append("..")
+
 from math.sparking import Sparking
 
 class TestSparking(object):  

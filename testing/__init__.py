@@ -1,1 +1,1 @@
-__author__ = 'Administrator'
+from math.sparking import Sparking

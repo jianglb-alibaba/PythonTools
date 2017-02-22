@@ -4,9 +4,9 @@
 import pytest
 import sys
 
-sys.path.append("..")
+# sys.path.append("..")
 
-from math.sparking import Sparking
+from sparking import Sparking
 
 class TestSparking(object):  
     @pytest.mark.parametrize("bits_num, key, expected",[
